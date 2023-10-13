@@ -1,0 +1,121 @@
+/* YourCSSFile.css */
+
+/* Container holding the form and overlay */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  /* Individual form containers */
+  .form-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s;
+  }
+  
+  .sign-up-container {
+    left: 0;
+    transform: translateX(0);
+  }
+  
+  .sign-in-container {
+    right: 0;
+    transform: translateX(0);
+  }
+  
+  /* Overlay container */
+  .overlay-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.6s;
+  }
+  
+  /* Panels in the overlay container */
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: transform 0.6s;
+  }
+  
+  .overlay-panel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s;
+  }
+  
+  /* Style the sign-up and sign-in buttons */
+  button.ghost {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    transition: background 0.6s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button.ghost:hover {
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Apply styles when 'right-panel-active' class is added */
+  .container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+  }
+  
+  .container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+  }
+  
+  .container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+  }
+  
+  .container.right-panel-active .overlay-panel.overlay-left {
+    transform: translateX(0);
+  }
+  
+  .container.right-panel-active .overlay-panel.overlay-right {
+    transform: translateX(-100%);
+  }
+  
+  
+  
+  
+  
