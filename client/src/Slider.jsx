@@ -1,4 +1,5 @@
 
+
 import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +7,7 @@ import image1 from './image/image1.png';
 import image2 from './image/image2.png';
 import image3 from './image/image3.png';
 import './Slider.css';
+import { colours } from "nodemon/lib/config/defaults";
 
 
 const Slider = () => {
@@ -40,7 +42,7 @@ const Slider = () => {
       id: 3,
       desc: "We assist in your Digital presence in the fast-moving market. Our Digital Marketing team has expertise to ensure your Brand promotion and Brand awareness for Growth and Scaling.",
       name: "Digital Marketing",
-      img: image3,
+      img: image1,
 
     },
     {
@@ -75,7 +77,7 @@ const Slider = () => {
             <div className="content">
               <div className="name">{item.name}</div>
               <div className="des">{item.desc}</div>
-              <button>See more</button>
+              <button style={{backgroundColor: `#e39725`}}>See more</button>
             </div>
           </div>
 
