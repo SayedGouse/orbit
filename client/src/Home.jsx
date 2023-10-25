@@ -231,8 +231,7 @@ const Home = () => {
                         <div class="col-lg-4 foot-col mb-2">
                             <h4 class="">Services</h4>
                             <ul class="p-0">
-                                <li class="list-unstyled mb-1"><a href="#" class="text-decoration-none text-dark">Web
-                                        Development</a></li>
+                                <li class="list-unstyled mb-1"><a href="#" class="text-decoration-none text-dark">Web Development</a></li>
                                 <li class="list-unstyled mb-1"><a href="#" class="text-decoration-none text-dark">App
                                         Development</a></li>
                                 <li class="list-unstyled mb-1"><a href="#" class="text-decoration-none text-dark">Cloud

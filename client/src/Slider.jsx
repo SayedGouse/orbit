@@ -61,9 +61,7 @@ const Slider = () => {
 
   return (
     <div className="container_slider">
-      <div className="nav">
 
-      </div>
       <div id="slide" ref={slideRef}>
         {data.map((item) => (
 
