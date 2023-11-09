@@ -272,34 +272,33 @@ const AboutUs = () => {
 
         </div>
       </section>
-      <div className="container-fluid p-5" >
-        <div className="row">
-        <div
-            className={`Employes col-lg-4 ${activeSection === "Employees" ? "active" : ""}`}
-            style={{ textAlign: 'center',cursor:'pointer',color:'orange' }}
-          >
-            <h5 onClick={() => showCategory('Employees')}>Employees</h5>
-            <hr style={{ border: '1px solid orange', }} />
-          </div>
-          <div
-            className={`Work life col-lg-4 ${activeSection === "Work_life" ? "active" : ""}`}
-            style={{ textAlign: 'center' ,cursor:'pointer' }}
-          >
-            <h5 onClick={() => showCategory('Work_life')}>Work life</h5>
-            <hr style={{ border: '1px solid black' }} />
-          </div>
 
-          <div
-            className={`Work life col-lg-4 ${activeSection === "Customers" ? "active" : ""}`}
-            style={{ textAlign: 'center' ,cursor:'pointer' }}
-          >
-            <h5 onClick={() => showCategory('Customers')}>Customers</h5>
-            <hr style={{ border: '1px solid black' }} />
-          </div>
 
-        </div>
-
-      </div>
+      <div className="container-fluid p-5">
+  <div className="row">
+    <div
+      className={`Employes col-lg-4 ${activeSection === "Employees" ? "active" : ""}`}
+      style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Employees" ? 'orange' : 'black' }}
+    >
+      <h5 onClick={() => showCategory('Employees')}>Employees</h5>
+      <hr style={{ border: `1px solid ${activeSection === "Employees" ? 'orange' : 'black'}` }} />
+    </div>
+    <div
+      className={`Work life col-lg-4 ${activeSection === "Work_life" ? "active" : ""}`}
+      style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Work_life" ? 'orange' : 'black' }}
+    >
+      <h5 onClick={() => showCategory('Work_life')}>Work life</h5>
+      <hr style={{ border: `1px solid ${activeSection === "Work_life" ? 'orange' : 'black'}` }} />
+    </div>
+    <div
+      className={`Work life col-lg-4 ${activeSection === "Customers" ? "active" : ""}`}
+      style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Customers" ? 'orange' : 'black' }}
+    >
+      <h5 onClick={() => showCategory('Customers')}>Customers</h5>
+      <hr style={{ border: `1px solid ${activeSection === "Customers" ? 'orange' : 'black'}` }} />
+    </div>
+  </div>
+</div>
 
       <section id="Employees" style={{ display: activeSection === "Employees" ? "block" : "none" }}>
         <div className="container-fluid" >
