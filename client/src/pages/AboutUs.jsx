@@ -9,8 +9,11 @@ const AboutUs = () => {
   const showCategory = (section) => {
     setActiveSection(section);
   };
+
+  
   return (
     <>
+    
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -273,10 +276,10 @@ const AboutUs = () => {
         <div className="row">
         <div
             className={`Employes col-lg-4 ${activeSection === "Employees" ? "active" : ""}`}
-            style={{ textAlign: 'center',cursor:'pointer' }}
+            style={{ textAlign: 'center',cursor:'pointer',color:'orange' }}
           >
             <h5 onClick={() => showCategory('Employees')}>Employees</h5>
-            <hr style={{ border: '1px solid black' }} />
+            <hr style={{ border: '1px solid orange', }} />
           </div>
           <div
             className={`Work life col-lg-4 ${activeSection === "Work_life" ? "active" : ""}`}
