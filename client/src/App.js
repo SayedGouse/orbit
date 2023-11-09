@@ -7,7 +7,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Slider from "./pages/Slider.jsx";
-import Home from "./Home";
+import Home from "./pages/Home.jsx";
 import Signin from "./pages/Signin.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 
