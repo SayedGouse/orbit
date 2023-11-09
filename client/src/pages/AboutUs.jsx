@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 
 const AboutUs = () => {
+
+  const [activeSection, setActiveSection] = useState("Employees");
+
+  const showCategory = (section) => {
+    setActiveSection(section);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -215,7 +221,7 @@ const AboutUs = () => {
                 We find the path for your solution, your<br></br>
                 deployments and all your IT needs with one point<br></br>
                 solution.
-                <p style={{fontSize:'20px'}}>
+                <p style={{ fontSize: '20px' }}>
                   We work hard to thrive with success and go beyond<br></br>
                   with the aim of achieving more for our customers.
                 </p>
@@ -228,11 +234,11 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section >
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'end' }} >
-              <p style={{fontSize:'20px'}}>
+              <p style={{ fontSize: '20px' }}>
                 we are proud to announce we are the fastest growing IT<br></br>
                 company with a 100% success rate and happy<br></br>
                 customers. We could value this as our customer did our <br></br>
@@ -244,7 +250,7 @@ const AboutUs = () => {
 
             </div>
             <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'start' }} >
-              <p style={{fontSize:'20px'}}>
+              <p style={{ fontSize: '20px' }}>
                 With diverse employee culture and talent, we always <br></br>
                 aim for goals and are always time sensitive for our <br></br>
                 project. We value your time and Service Level <br></br>
@@ -254,7 +260,7 @@ const AboutUs = () => {
             </div>
             <div className="mt-5" style={{ display: 'flex', justifyContent: 'center', }}>
               <h2 className="fw-bold">Providing Path to individuals and organizations to achieve more
-                <p style={{fontSize:'20px'}}>We are keen to grow. We strive with the ideology “your success is our success”. This ensures quality delivery and scalability of <br></br>
+                <p style={{ fontSize: '20px' }}>We are keen to grow. We strive with the ideology “your success is our success”. This ensures quality delivery and scalability of <br></br>
                   your organization in a hassle-free environment.</p>
               </h2>
 
@@ -265,47 +271,87 @@ const AboutUs = () => {
       </section>
       <div className="container-fluid p-5" >
         <div className="row">
-          <div className=" Employes col-lg-4" style={{ textAlign: 'center' }}>
-            <h5>Employees</h5>
+        <div
+            className={`Employes col-lg-4 ${activeSection === "Employees" ? "active" : ""}`}
+            style={{ textAlign: 'center',cursor:'pointer' }}
+          >
+            <h5 onClick={() => showCategory('Employees')}>Employees</h5>
             <hr style={{ border: '1px solid black' }} />
-
           </div>
-          <div className=" Work life col-lg-4" style={{ textAlign: 'center' }}>
-            <h5>Work life</h5>
+          <div
+            className={`Work life col-lg-4 ${activeSection === "Work_life" ? "active" : ""}`}
+            style={{ textAlign: 'center' ,cursor:'pointer' }}
+          >
+            <h5 onClick={() => showCategory('Work_life')}>Work life</h5>
             <hr style={{ border: '1px solid black' }} />
-
           </div>
-          <div className=" Customers  col-lg-4" style={{ textAlign: 'center' }}>
-            <h5>Customers </h5>
-            <hr style={{ border: '1px solid black' }} />
 
+          <div
+            className={`Work life col-lg-4 ${activeSection === "Customers" ? "active" : ""}`}
+            style={{ textAlign: 'center' ,cursor:'pointer' }}
+          >
+            <h5 onClick={() => showCategory('Customers')}>Customers</h5>
+            <hr style={{ border: '1px solid black' }} />
           </div>
 
         </div>
 
       </div>
-      <section >
+
+      <section id="Employees" style={{ display: activeSection === "Employees" ? "block" : "none" }}>
         <div className="container-fluid" >
           <div className="row">
-            <div className="col-lg-7" style={{display:'flex', justifyContent:'center', lineHeight:'100px'}}>
-              <h2 className="fw-bold" style={{textAlign:'justify',marginTop:'10%'}}>
-              We are proud to be a diverse and <br></br>
-               inclusive company, where everyone feels <br></br>
-               welcome and valued, regardless of their <br></br>
+
+          <div className="col-lg-5">
+              <img src="workus.png" alt="not found" />
+
+            </div>
+            <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
+              <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
+                We are proud to be a diverse and <br></br>
+                inclusive company, where everyone feels <br></br>
+                welcome and valued, regardless of their <br></br>
                 background, identity, or beliefs.
-                <p style={{fontSize:'20px'}}>
-                We offer flexible work hours and a supportive work environment,<br></br>
-                 empowering our employees to learn and grow in their careers.
+                <p style={{ fontSize: '20px' }}>
+                  We offer flexible work hours and a supportive work environment,<br></br>
+                  empowering our employees to learn and grow in their careers.
                 </p>
-                <p style={{fontSize:'20px'}}>
-                With a team of 42 employees , we are emerging with new quality of <br></br>
-                life and work life balance.
+                <p style={{ fontSize: '20px' }}>
+                  With a team of 42 employees , we are emerging with new quality of <br></br>
+                  life and work life balance.
+                </p>
+              </h2>
+
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="Work_life" style={{ display: activeSection === "Work_life" ? "block" : "none" }}>
+        <div className="container-fluid" >
+          <div className="row">
+            <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
+              <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
+                We are proud to be a diverse and <br></br>
+                inclusive company, where everyone feels <br></br>
+                welcome and valued, regardless of their <br></br>
+                background, identity, or beliefs.
+                <p style={{ fontSize: '20px' }}>
+                  We offer flexible work hours and a supportive work environment,<br></br>
+                  empowering our employees to learn and grow in their careers.
+                </p>
+                <p style={{ fontSize: '20px' }}>
+                  With a team of 42 employees , we are emerging with new quality of <br></br>
+                  life and work life balance.
                 </p>
               </h2>
 
             </div>
             <div className="col-lg-5">
-              <img src="workus.png" alt="not found"/>
+              <img src="workus.png" alt="not found" />
 
             </div>
 
@@ -314,7 +360,40 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <footer class="footer footer1">
+
+      <section id="Customers" style={{ display: activeSection === "Customers" ? "block" : "none" }}>
+        <div className="container-fluid" >
+          <div className="row">
+
+          <div className="col-lg-5">
+              <img src="workus.png" alt="not found" />
+
+            </div>
+            <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
+              <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
+                We are proud to be a diverse and <br></br>
+                inclusive company, where everyone feels <br></br>
+                welcome and valued, regardless of their <br></br>
+                background, identity, or beliefs.
+                <p style={{ fontSize: '20px' }}>
+                  We offer flexible work hours and a supportive work environment,<br></br>
+                  empowering our employees to learn and grow in their careers.
+                </p>
+                <p style={{ fontSize: '20px' }}>
+                  With a team of 42 employees , we are emerging with new quality of <br></br>
+                  life and work life balance.
+                </p>
+              </h2>
+
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer footer1 mt-5">
         <div class="footer p-4">
           <div class="row">
             <div class="col-md-4 mb-5">
