@@ -2,9 +2,9 @@
 import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import image1 from './image/image1.png';
-import image2 from './image/image2.png';
-import image3 from './image/image3.png';
+import image1 from '../image/image1.png';
+import image2 from '../image/image2.png';
+import image3 from '../image/image3.png';
 import './Slider.css';
 
 

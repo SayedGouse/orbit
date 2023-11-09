@@ -6,9 +6,9 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Slider from "./Slider";
+import Slider from "./pages/Slider.jsx";
 import Home from "./Home";
-import Signin from "./Signin";
+import Signin from "./pages/Signin.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 
 function App() {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-// import './sign.css'
-import './style.css';
+import './sign.css'
+import '../style.css';
 
 const Signin = () => {
     const [isSignUpActive, setIsSignUpActive] = useState(false);
