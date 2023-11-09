@@ -229,33 +229,59 @@ const AboutUs = () => {
       <section>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-6" style={{display:'flex',justifyContent:'end'}} >
+            <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'end' }} >
               <p>
-              we are proud to announce we are the fastest growing IT<br></br> 
-              company with a 100% success rate and happy<br></br>
-               customers. We could value this as our customer did our <br></br>
-               marketing roles and referred to other customers
-               <p>More about our Customers</p>
+                we are proud to announce we are the fastest growing IT<br></br>
+                company with a 100% success rate and happy<br></br>
+                customers. We could value this as our customer did our <br></br>
+                marketing roles and referred to other customers
+                <a><p className="text-warning">More about our Customers</p></a>
               </p>
-             
-              <line/>
-              </div>
-              <div className="col-lg-6" style={{display:'flex',justifyContent:'start'}} >
-                <p>
+              <line style={{ border: '1px solid black', margin: '0 5% ' }} />
+
+
+            </div>
+            <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'start' }} >
+              <p>
                 With diverse employee culture and talent, we always <br></br>
                 aim for goals and are always time sensitive for our <br></br>
-                 project. We value your time and Service Level <br></br>
-                  agreements are our core preamble to follow
-                <p>More About Employess</p>
-                </p>
-              </div>
-              <h3 className="fw-bold">Providing Path to individuals and organizations to achieve more</h3>
-              <p>We are keen to grow. We strive with the ideology “your success is our success”. This ensures quality delivery and scalability of <br></br>
-               your organization in a hassle-free environment.</p>
+                project. We value your time and Service Level <br></br>
+                agreements are our core preamble to follow
+                <a><p className="text-warning">More About Employess</p></a>
+              </p>
+            </div>
+            <div className="mt-5" style={{ display: 'flex', justifyContent: 'center', }}>
+              <h2 className="fw-bold">Providing Path to individuals and organizations to achieve more
+                <p >We are keen to grow. We strive with the ideology “your success is our success”. This ensures quality delivery and scalability of <br></br>
+                  your organization in a hassle-free environment.</p>
+              </h2>
+
+            </div>
           </div>
 
         </div>
       </section>
+      <div className="container-fluid p-5" >
+        <div className="row">
+          <div className=" Employes col-lg-4" style={{textAlign:'center'}}>
+            <h5>Employes</h5>
+            <hr style={{ border: '1px solid black' }} />
+
+          </div>
+          <div className=" Work life col-lg-4" style={{textAlign:'center'}}>
+            <h5>Work life</h5>
+            <hr style={{ border: '1px solid black' }} />
+
+          </div>
+          <div className=" Customers  col-lg-4" style={{textAlign:'center'}}>
+            <h5>Customers </h5>
+            <hr style={{ border: '1px solid black' }} />
+
+          </div>
+
+        </div>
+
+      </div>
 
     </>
   );
