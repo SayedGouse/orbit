@@ -221,9 +221,7 @@ const AboutUs = () => {
           <div className="row">
             <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'justify' }} className="col-lg-8 ">
               <h3 className="fw-bold mt-5">
-                We find the path for your solution, your<br></br>
-                deployments and all your IT needs with one point<br></br>
-                solution.
+              Orbit Technologys is committed to fostering a culture of innovation and continuous learning for its employees
                 <p style={{ fontSize: '20px' }}>
                   We work hard to thrive with success and go beyond<br></br>
                   with the aim of achieving more for our customers.
@@ -305,23 +303,18 @@ const AboutUs = () => {
         <div className="container-fluid" >
           <div className="row">
 
-          <div className="col-lg-5">
-              <img src="workus.png" alt="not found" />
+          <div className="col-lg-7">
+              <img src="Group 2.png" alt="not found"  />
 
             </div>
-            <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
               <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
-                We are proud to be a diverse and <br></br>
-                inclusive company, where everyone feels <br></br>
-                welcome and valued, regardless of their <br></br>
-                background, identity, or beliefs.
+              Orbit Technologys is committed to fostering a culture of innovation and continuous learning for its employees
                 <p style={{ fontSize: '20px' }}>
-                  We offer flexible work hours and a supportive work environment,<br></br>
-                  empowering our employees to learn and grow in their careers.
+                We encourage our employees to take risks and try new things, and we provide them with the resources and support they need to succeed. For example, we offer a variety of professional development programs, including tuition reimbursement and in-house training courses.
                 </p>
                 <p style={{ fontSize: '20px' }}>
-                  With a team of 42 employees , we are emerging with new quality of <br></br>
-                  life and work life balance.
+                We also have a culture of mentorship and collaboration, where employees are encouraged to learn from each other and share their ideas.
                 </p>
               </h2>
 
