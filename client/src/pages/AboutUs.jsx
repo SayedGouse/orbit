@@ -229,6 +229,8 @@ const AboutUs = () => {
           </div>
         </div>
       </nav>
+
+      
       <section style={{ backgroundImage: 'url(imagebg.png)', width: '100%', height: '100%', backgroundSize: 'cover', }}>
         <div className="container-fluid" >
           <div className="row">
@@ -318,20 +320,19 @@ const AboutUs = () => {
           <div className="row">
 
           <div className="col-lg-5">
-              <img src="workus.png" alt="not found" />
+              <img className="employeesimg" src="workus.png" alt="not found" />
 
             </div>
             <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
-              <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
-                We are proud to be a diverse and <br></br>
-                inclusive company, where everyone feels <br></br>
-                welcome and valued, regardless of their <br></br>
-                background, identity, or beliefs.
-                <p style={{ fontSize: '20px' }}>
+              <h2 className="fw-bold" >
+              Orbit Technologys is committed to <br></br>
+               fostering a culture of innovation and <br></br>
+                continuous learning for its employees
+                <p style={{ fontSize: '20px',lineHeight:'25px' }}>
                   We offer flexible work hours and a supportive work environment,<br></br>
                   empowering our employees to learn and grow in their careers.
                 </p>
-                <p style={{ fontSize: '20px' }}>
+                <p style={{ fontSize: '20px',lineHeight:'25px'  }}>
                   With a team of 42 employees , we are emerging with new quality of <br></br>
                   life and work life balance.
                 </p>
@@ -350,7 +351,7 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
               <h2 className="fw-bold" >
-                We are proud to be a diverse and <br></br>
+              We are proud to be a diverse and <br></br>
                 inclusive company, where everyone feels <br></br>
                 welcome and valued, regardless of their <br></br>
                 background, identity, or beliefs.
@@ -365,7 +366,7 @@ const AboutUs = () => {
               </h2>
 
             </div>
-            <div className="col-lg-5" style={{display:'flex',justifyContent:'center'}}>
+            <div className="col-lg-5" >
               <img className="workusimg" src="workus.png" alt="not found" />
 
             </div>
