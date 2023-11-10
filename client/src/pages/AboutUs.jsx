@@ -317,25 +317,23 @@ const AboutUs = () => {
         <div className="container-fluid" >
           <div className="row">
 
-            <div className="col-lg-5" style={{display:'flex',justifyContent:'center'}}>
-              <img className="employeesimg" src="employees.png" alt="not found" />
+          <div className="col-lg-5">
+              <img src="workus.png" alt="not found" />
 
             </div>
             <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
               <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
-                Orbit Technologys is committed to <br></br>
-                fostering a culture of innovation and <br></br>
-                continuous learning for its employees
-                <p style={{ fontSize: '20px',lineHeight:'25px' }}>
-                  We encourage our employees to take risks and try new things, and we<br></br>
-                  provide them with the resources and support they need to succeed. For <br></br>
-                  example, we offer a variety of professional development programs, <br></br>
-                  including tuition reimbursement and in-house training courses.
+                We are proud to be a diverse and <br></br>
+                inclusive company, where everyone feels <br></br>
+                welcome and valued, regardless of their <br></br>
+                background, identity, or beliefs.
+                <p style={{ fontSize: '20px' }}>
+                  We offer flexible work hours and a supportive work environment,<br></br>
+                  empowering our employees to learn and grow in their careers.
                 </p>
-                <p style={{ fontSize: '20px',lineHeight:'25px' }}>
-                  We also have a culture of mentorship and collaboration, where <br></br>
-                  employees are encouraged to learn from each other and share <br></br>
-                  their ideas.
+                <p style={{ fontSize: '20px' }}>
+                  With a team of 42 employees , we are emerging with new quality of <br></br>
+                  life and work life balance.
                 </p>
               </h2>
 
