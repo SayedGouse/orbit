@@ -45,7 +45,7 @@ const Signin = () => {
 
                 <h5>Or Sign-up with</h5>
                 <div className="social-login">
-                    <a href="#"><i className=""></i><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"
                             viewBox="0 0 29 29" fill="none">
                             <g clip-path="url(#clip0_46_77)">
                                 <path
@@ -70,7 +70,7 @@ const Signin = () => {
                                 </clipPath>
                             </defs>
                         </svg></a>
-                    <a href="#"><i className=""><svg xmlns="http://www.w3.org/2000/svg" width="33" height="31"
+                    <a href="#"><i className=""><svg className='svg' xmlns="http://www.w3.org/2000/svg" width="33" height="31"
                                 viewBox="0 0 33 31" fill="none">
                                 <g clip-path="url(#clip0_46_83)">
                                     <path
@@ -86,7 +86,7 @@ const Signin = () => {
                                     </clipPath>
                                 </defs>
                             </svg></i></a>
-                    <a href="#"><i className=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="26"
+                    <a href="#"><i className=""><svg className='svg' xmlns="http://www.w3.org/2000/svg" width="24" height="26"
                                 viewBox="0 0 24 26" fill="none">
                                 <g clip-path="url(#clip0_46_87)">
                                     <path d="M11.4062 12.3567H0V0H11.4062V12.3567Z" fill="#F1511B" />
@@ -160,7 +160,7 @@ const Signin = () => {
                                     </clipPath>
                                 </defs>
                             </svg></i></a>
-                    <a href="#"><i className=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="26"
+                    <a href="#"><i className=""><svg className='svg' xmlns="http://www.w3.org/2000/svg" width="24" height="26"
                                 viewBox="0 0 24 26" fill="none">
                                 <g clip-path="url(#clip0_46_87)">
                                     <path d="M11.4062 12.3567H0V0H11.4062V12.3567Z" fill="#F1511B" />
@@ -191,7 +191,7 @@ const Signin = () => {
             </button>
           </div>
           <div className="overlay-panel overlay-right">
-            <h2>Hello, Friend!</h2>
+            <h2 className='hhhh'>Hello, Friend!</h2>
             <p>Enter your personal details and start journey with us</p>
             <button className="ghost" id="signUp" onClick={handleSignUpClick}>
               Sign Up

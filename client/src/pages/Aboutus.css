@@ -1,0 +1,134 @@
+
+.employeesimg{
+    max-width: 500px;
+    width: 100%;
+   right: 20%;
+    align-items: center;
+}
+
+.workusimg{
+    max-width: 500px;
+    width: 100%;
+   right: 20%;
+    align-items: center;
+}
+
+.customerh3{
+    text-align: center;
+    color: gray;
+}
+
+.fw-bold{
+    text-align: justify;
+    margin-top: 10%;
+}
+
+.employeesandcustomer{
+    display: flex;
+    justify-content: end;
+}
+
+.andcustomer{
+    display: flex;
+    justify-content: start;
+}
+
+
+
+@media (min-width: 260px) and (max-width: 520px) {
+
+    .Orbitlogo{
+        max-width: 400px;
+        width: 100%;
+        max-height: 400;
+        height: 100%;
+
+    }
+
+    .middleline{
+        display: none;
+    }
+
+    .fw-bold{
+        max-width: 300px;
+        width: 100%;
+        text-align: start;
+        margin-top: 10%;
+    }
+    
+}
+
+@media (min-width: 260px) and (max-width: 520px) {
+
+    .workusimg{
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .UNION{
+        display: 'flex';
+        justify-content:center
+    }
+
+    .NTALICA{
+        display: 'flex';
+        justify-content:center
+    }
+
+    .employeesimg{
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+}
+
+
+@media (min-width: 519px) and (max-width: 1050px) {
+
+    .middleline{
+        display: none;
+    }
+    .employeesandcustomer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .andcustomer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fw-bold{
+        max-width: 700px;
+        height: 100%;
+
+    }
+    .Orbitlogo{
+        max-width: 300px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
+
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1850px) {
+
+    .Orbitlogo{
+        max-width: 300px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
+
+    }
+
+}
+
+
+

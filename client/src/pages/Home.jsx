@@ -218,7 +218,7 @@ const Home = () => {
           style={{ backgroundColor: "#F9F6E9" }}
         >
           <div className="col" style={{ paddingLeft: "5%" }}>
-            <h1>Empower Your Brand in the Digital World</h1>
+            <h1 className=".top_h1">Empower Your Brand in the Digital World</h1>
             <p>Get Website customized according your requirements</p>
             <a href="#" className="btn btn-warning align-items-center">
               Learn more{" "}

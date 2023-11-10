@@ -1,19 +1,32 @@
 import React, { useState } from "react";
+import { BsFillArrowUpCircleFill, BsFillArrowDownCircleFill } from 'react-icons/bs'
+import { BiRightArrowCircle } from 'react-icons/bi'
+
+import '../pages/Aboutus.css'
 
 
 
 const AboutUs = () => {
 
   const [activeSection, setActiveSection] = useState("Employees");
+  const [isDivVisible, setDivVisible] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
 
   const showCategory = (section) => {
     setActiveSection(section);
   };
 
-  
+
+  const toggleVisibility = () => {
+    setIsHidden(!isHidden);
+    setDivVisible(!isDivVisible)
+  };
+
+
+
   return (
     <>
-    
+
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -33,7 +46,7 @@ const AboutUs = () => {
           <div className="collapse navbar-collapse " id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
@@ -224,7 +237,7 @@ const AboutUs = () => {
                 We find the path for your solution, your<br></br>
                 deployments and all your IT needs with one point<br></br>
                 solution.
-                <p style={{ fontSize: '20px' }}>
+                <p style={{ fontSize: '20px',lineHeight:'25px'}}>
                   We work hard to thrive with success and go beyond<br></br>
                   with the aim of achieving more for our customers.
                 </p>
@@ -232,7 +245,7 @@ const AboutUs = () => {
               </h3>
             </div>
             <div className="col-lg-4 p-5">
-              <img src="animation-unscreen.gif" className="mt-5 " width={400} height={400} alt="not found" />
+              <img src="animation-unscreen.gif" className="Orbitlogo mt-5 " width={400} height={400} alt="not found" />
             </div>
           </div>
         </div>
@@ -240,30 +253,30 @@ const AboutUs = () => {
       <section >
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'end' }} >
-              <p style={{ fontSize: '20px' }}>
+            <div className="employeesandcustomer col-lg-6"  >
+              <p  style={{ fontSize: '20px',lineHeight:'25px'  }}>
                 we are proud to announce we are the fastest growing IT<br></br>
                 company with a 100% success rate and happy<br></br>
                 customers. We could value this as our customer did our <br></br>
                 marketing roles and referred to other customers
-                <a><p className="text-warning">More about our Customers</p></a>
+                <a href="#Customers"><p  onClick={() => showCategory('Customers')} style={{cursor:'pointer'}} className="text-warning">More about our Customers ,<BiRightArrowCircle/></p></a>
               </p>
-              <line style={{ border: '1px solid black', margin: '0 5% ' }} />
+              <line className="middleline" style={{ border: '1px solid black', margin: '0 5% ' }} />
 
 
             </div>
-            <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'start' }} >
-              <p style={{ fontSize: '20px' }}>
+            <div className="andcustomer col-lg-6" >
+              <p style={{ fontSize: '20px',lineHeight:'25px'  }}>
                 With diverse employee culture and talent, we always <br></br>
                 aim for goals and are always time sensitive for our <br></br>
                 project. We value your time and Service Level <br></br>
                 agreements are our core preamble to follow
-                <a><p className="text-warning">More About Employess</p></a>
+                <a href="#Employees"><p onClick={() => showCategory('Employees')} style={{cursor:'pointer'}} className="text-warning">More About Employess <BiRightArrowCircle/></p></a>
               </p>
             </div>
             <div className="mt-5" style={{ display: 'flex', justifyContent: 'center', }}>
               <h2 className="fw-bold">Providing Path to individuals and organizations to achieve more
-                <p style={{ fontSize: '20px' }}>We are keen to grow. We strive with the ideology “your success is our success”. This ensures quality delivery and scalability of <br></br>
+                <p style={{ fontSize: '20px',lineHeight:'25px'  }}>We are keen to grow. We strive with the ideology “your success is our success”. This ensures quality delivery and scalability of <br></br>
                   your organization in a hassle-free environment.</p>
               </h2>
 
@@ -275,57 +288,59 @@ const AboutUs = () => {
 
 
       <div className="container-fluid p-5">
-  <div className="row">
-    <div
-      className={`Employes col-lg-4 ${activeSection === "Employees" ? "active" : ""}`}
-      style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Employees" ? 'orange' : 'black' }}
-    >
-      <h5 onClick={() => showCategory('Employees')}>Employees</h5>
-      <hr style={{ border: `1px solid ${activeSection === "Employees" ? 'orange' : 'black'}` }} />
-    </div>
-    <div
-      className={`Work life col-lg-4 ${activeSection === "Work_life" ? "active" : ""}`}
-      style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Work_life" ? 'orange' : 'black' }}
-    >
-      <h5 onClick={() => showCategory('Work_life')}>Work life</h5>
-      <hr style={{ border: `1px solid ${activeSection === "Work_life" ? 'orange' : 'black'}` }} />
-    </div>
-    <div
-      className={`Work life col-lg-4 ${activeSection === "Customers" ? "active" : ""}`}
-      style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Customers" ? 'orange' : 'black' }}
-    >
-      <h5 onClick={() => showCategory('Customers')}>Customers</h5>
-      <hr style={{ border: `1px solid ${activeSection === "Customers" ? 'orange' : 'black'}` }} />
-    </div>
-  </div>
-</div>
+        <div className="row">
+          <div
+            className={`Employes col-lg-4 ${activeSection === "Employees" ? "active" : ""}`}
+            style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Employees" ? 'orange' : 'black' }}
+          >
+            <h5 onClick={() => showCategory('Employees')}>Employees</h5>
+            <hr style={{ border: `1px solid ${activeSection === "Employees" ? 'orange' : 'black'}` }} />
+          </div>
+          <div
+            className={`Work life col-lg-4 ${activeSection === "Work_life" ? "active" : ""}`}
+            style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Work_life" ? 'orange' : 'black' }}
+          >
+            <h5 onClick={() => showCategory('Work_life')}>Work life</h5>
+            <hr style={{ border: `1px solid ${activeSection === "Work_life" ? 'orange' : 'black'}` }} />
+          </div>
+          <div
+            className={`Work life col-lg-4 ${activeSection === "Customers" ? "active" : ""}`}
+            style={{ textAlign: 'center', cursor: 'pointer', color: activeSection === "Customers" ? 'orange' : 'black' }}
+          >
+            <h5 onClick={() => showCategory('Customers')}>Customers</h5>
+            <hr style={{ border: `1px solid ${activeSection === "Customers" ? 'orange' : 'black'}` }} />
+          </div>
+        </div>
+      </div>
 
       <section id="Employees" style={{ display: activeSection === "Employees" ? "block" : "none" }}>
         <div className="container-fluid" >
           <div className="row">
 
-          <div className="col-lg-5">
-              <img src="workus.png" alt="not found" />
+            <div className="col-lg-5" style={{display:'flex',justifyContent:'center'}}>
+              <img className="employeesimg" src="employees.png" alt="not found" />
 
             </div>
             <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
               <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
-                We are proud to be a diverse and <br></br>
-                inclusive company, where everyone feels <br></br>
-                welcome and valued, regardless of their <br></br>
-                background, identity, or beliefs.
-                <p style={{ fontSize: '20px' }}>
-                  We offer flexible work hours and a supportive work environment,<br></br>
-                  empowering our employees to learn and grow in their careers.
+                Orbit Technologys is committed to <br></br>
+                fostering a culture of innovation and <br></br>
+                continuous learning for its employees
+                <p style={{ fontSize: '20px',lineHeight:'25px' }}>
+                  We encourage our employees to take risks and try new things, and we<br></br>
+                  provide them with the resources and support they need to succeed. For <br></br>
+                  example, we offer a variety of professional development programs, <br></br>
+                  including tuition reimbursement and in-house training courses.
                 </p>
-                <p style={{ fontSize: '20px' }}>
-                  With a team of 42 employees , we are emerging with new quality of <br></br>
-                  life and work life balance.
+                <p style={{ fontSize: '20px',lineHeight:'25px' }}>
+                  We also have a culture of mentorship and collaboration, where <br></br>
+                  employees are encouraged to learn from each other and share <br></br>
+                  their ideas.
                 </p>
               </h2>
 
             </div>
-            
+
 
           </div>
 
@@ -336,24 +351,24 @@ const AboutUs = () => {
         <div className="container-fluid" >
           <div className="row">
             <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
-              <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
+              <h2 className="fw-bold" >
                 We are proud to be a diverse and <br></br>
                 inclusive company, where everyone feels <br></br>
                 welcome and valued, regardless of their <br></br>
                 background, identity, or beliefs.
-                <p style={{ fontSize: '20px' }}>
+                <p className="mt-3" style={{ fontSize: '20px' ,lineHeight:'25px' }}>
                   We offer flexible work hours and a supportive work environment,<br></br>
                   empowering our employees to learn and grow in their careers.
                 </p>
-                <p style={{ fontSize: '20px' }}>
+                <p style={{ fontSize: '20px',lineHeight:'25px' }}>
                   With a team of 42 employees , we are emerging with new quality of <br></br>
                   life and work life balance.
                 </p>
               </h2>
 
             </div>
-            <div className="col-lg-5">
-              <img src="workus.png" alt="not found" />
+            <div className="col-lg-5" style={{display:'flex',justifyContent:'center'}}>
+              <img className="workusimg" src="workus.png" alt="not found" />
 
             </div>
 
@@ -367,31 +382,124 @@ const AboutUs = () => {
         <div className="container-fluid" >
           <div className="row">
 
-          <div className="col-lg-5">
-              <img src="workus.png" alt="not found" />
+            <h3 className="customerh3" >Orbit technologys is dedicated to providing its customers <br></br>
+              with highest quality products and services.</h3>
 
+            <div className="container-fluid mt-5 p-5"  >
+              <div className="row">
+                <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="shaheen.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="metropolis hotel.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="tech kawaii.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="urban dhaba.png" width={200} height={150} alt="not found" />
+                </div>
+                < div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="maha's.png" width={200} height={150} alt="not found" />
+                </div>
+              </div>
             </div>
-            <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
-              <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
-                We are proud to be a diverse and <br></br>
-                inclusive company, where everyone feels <br></br>
-                welcome and valued, regardless of their <br></br>
-                background, identity, or beliefs.
-                <p style={{ fontSize: '20px' }}>
-                  We offer flexible work hours and a supportive work environment,<br></br>
-                  empowering our employees to learn and grow in their careers.
-                </p>
-                <p style={{ fontSize: '20px' }}>
-                  With a team of 42 employees , we are emerging with new quality of <br></br>
-                  life and work life balance.
-                </p>
-              </h2>
 
+            <div className="container-fluid mt-5 p-5" >
+              <div className="row">
+                <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="ktc.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="sana shaheen.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="kolhapuri Thali logo.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="GR.png" width={200} height={150} alt="not found" />
+                </div>
+                <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <img src="ISM.png" width={200} height={150} alt="not found" />
+                </div>
+              </div>
             </div>
-            
+            {
+              isDivVisible && (
+                <>
+                  <div className="container-fluid mt-5 p-5" id='hide' >
+                    <div className="row">
+                      <div className=" UNION col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="UNION COOPS.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="V2 ULTIMA.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="herbal logo 1.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="HONESTY PERFECTLY.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="NTALICA col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="NTALICA TECH.png" width={200} height={150} alt="not found" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="container-fluid mt-5 p-5" id='hide' >
+                    <div className="row">
+                      <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="KANCHH.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="BURAQ.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="DOGEMON.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="MASSAGER.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="GURUDEV APP.png" width={200} height={150} alt="not found" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="container-fluid mt-5 p-5" id='hide' >
+                    <div className="row">
+                      <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="UPWARD IMG.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="CHICKBITES.png" width={200} height={150} alt="not found" />
+                      </div>
+                      <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img src="AL-MADINA.png" width={200} height={150} alt="not found" />
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )
+            }
+
+
+            <div className="container-fluid mt-5 mb-5" style={{ display: 'flex', justifyContent: 'center' }}>
+              {isHidden ? (
+                <BsFillArrowUpCircleFill onClick={toggleVisibility} fontSize={70} />
+              ) : (
+                <BsFillArrowDownCircleFill onClick={toggleVisibility} fontSize={70} />
+              )}
+            </div>
+
+            <h3 className="mt-2" style={{ textAlign: 'center' }}><span style={{ color: 'orange' }}>Orbit Technologys</span> is a company that is committed to making a difference <br></br>
+              in the world. Through our commitment to our customers, employees, and<br></br>
+              community, we are building a better future for all.
+            </h3>
+
 
           </div>
-
         </div>
       </section>
 

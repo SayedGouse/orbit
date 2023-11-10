@@ -114,8 +114,48 @@
   .container.right-panel-active .overlay-panel.overlay-right {
     transform: translateX(-100%);
   }
+
+
+  @media (min-width: 250px) and (max-width: 450px) {
+    svg{
+      width: 14px;
+      height: 14px;
+    }
+
+    .hhhh{
+      font-size: 18px;
+    }
+
+    button{
+      font-size: 12px;
+      padding: 0 5px;
+
+    }
+    .overlay-left{
+      right:7%;
+    }
+
+    .overlay-right{
+      left: 7%;
+    }
   
-  
+  }
+
+  @media (min-width: 900px) and (max-width: 1800px) {
+
+    .container{
+      margin-top: 5%;
+    }
+
+  }
+
+  @media (min-width: 450px) and (max-width: 650px) {
+
+    svg{
+      width: 18px;
+      height: 18px;
+    }
+  }
   
   
   

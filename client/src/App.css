@@ -1,6 +1,11 @@
 
  /* Home page css */
 
+ *{
+  padding: 0;
+  margin: 0;
+ }
+
  .dropdown-menu.show {
   display: flex;
   width: 800px;
@@ -103,12 +108,56 @@
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 400px) and (max-width: 480px) {
 
   .foot-bottom-text,
   .footer .content-right {
       text-align: center;
   }
+
+  .dtr-mb-minus50{
+    max-width: 280px;
+    width: 100%;
+  }
+
+  
+
+  
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+
+  .dtr-mb-minus50{
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .foot-bottom-text,
+  .footer .content-right {
+      text-align: center;
+  }
+
+  .top_h1{
+    max-width: 250px;
+    width: 100%;
+    font-size: medium;
+  }
+
 }
 
 
+@media (min-width: 480px) and (max-width: 850px) {
+
+  .dtr-mb-minus50{
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1150px) {
+
+  .dtr-mb-minus50{
+    max-width: 400px;
+    width: 100%;
+  }
+}
