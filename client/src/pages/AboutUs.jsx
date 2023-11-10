@@ -321,7 +321,7 @@ const AboutUs = () => {
               <img className="employeesimg" src="employees.png" alt="not found" />
 
             </div>
-            <div className="col-lg-7" style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
               <h2 className="fw-bold" style={{ textAlign: 'justify', marginTop: '10%' }}>
                 Orbit Technologys is committed to <br></br>
                 fostering a culture of innovation and <br></br>
