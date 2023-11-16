@@ -320,7 +320,7 @@ const AboutUs = () => {
           <div className="row">
 
           <div className="col-lg-5">
-              <img className="employeesimg" src="workus.png" alt="not found" />
+              <img className="employeesimg" src="Group 2.png" alt="not found" />
 
             </div>
             <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
