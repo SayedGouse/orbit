@@ -413,7 +413,7 @@ const AboutUs = () => {
                   <img src="sana shaheen.png" width={200} height={150} alt="not found" />
                 </div>
                 <div className="col-lg-3" style={{ display: 'flex', justifyContent: 'center' }}>
-                  <img src="kolhapuri Thali logo.png" width={200} height={150} alt="not found" />
+                  <img src="Kolhapuri Thali logo.png" width={200} height={150} alt="not found" />
                 </div>
                 <div className="col-lg-2" style={{ display: 'flex', justifyContent: 'center' }}>
                   <img src="GR.png" width={200} height={150} alt="not found" />
@@ -566,7 +566,7 @@ const AboutUs = () => {
                     </li>
                     <li class="list-unstyled mb-1">
                       <a href="#" class="text-decoration-none text-dark"></a>
-                      Sumort
+                      Support
                     </li>
                   </ul>
                 </div>

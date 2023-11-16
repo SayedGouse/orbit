@@ -407,7 +407,7 @@ const Home = () => {
                     </li>
                     <li class="list-unstyled mb-1">
                       <a href="#" class="text-decoration-none text-dark"></a>
-                      Sumort
+                      Support
                     </li>
                   </ul>
                 </div>
