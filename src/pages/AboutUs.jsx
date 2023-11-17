@@ -324,7 +324,7 @@ const AboutUs = () => {
 
             </div>
             <div className="col-lg-5" style={{ display: 'flex', justifyContent: 'center' }}>
-              <h2 className="fw-bold" >
+              <h2 className="fw-bold">
               Orbit Technologys is committed to <br></br>
                fostering a culture of innovation and <br></br>
                 continuous learning for its employees
